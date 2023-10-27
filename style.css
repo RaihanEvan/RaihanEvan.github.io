@@ -13,6 +13,10 @@
     margin-left: 7px;
     margin-right: 7px;
   }
+  li {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
   #contacts a {
     text-decoration: none;
   }
