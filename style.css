@@ -1,0 +1,51 @@
+.img-circle {
+    display: block;
+    width: 300px auto;
+    height: 150px;
+    border: 5px solid #010102;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 25px;
+  }
+  #contacts img {
+    height: 150px;
+    width: 150px;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+  #contacts a {
+    text-decoration: none;
+  }
+  
+  #contacts img:hover {
+    opacity: 0.8;
+  }
+  
+  #contacts {
+    text-align: center;
+  }
+  h2 {
+    font-size: 15pt;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 0 0 10px 0;
+  }
+  
+  h2 span {
+    border: 8px solid #666666;
+    border-radius: 8px;
+    background-image: url("https://media.giphy.com/media/KVZWZQoS0yqfIiTAKq/giphy.gif");
+    padding: 12px;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    color: #000000;
+  }
+  .section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+  }
