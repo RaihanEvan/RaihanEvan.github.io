@@ -1,62 +1,137 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title align="center">Raihan Evan</title>
-        <link href="https://fonts.googleapis.com/css2?family=Bellota&display=swap" rel="stylesheet">
-        <link rel="icon" href="./cvpp1.jpg" type="image">
-        <link href="style.css" rel="stylesheet" type="text/css">
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evan's Portfolio</title>
 
-    </head>
+</head>
 <body>
-    <div id="header" class="section">
-        <img alt="logo" class="img-circle" src="cvpp1.jpg"> 
-        <p>Raihan Evan</p>
-    </div>
-    <div class="section">
-        <h2><span>About Me</span></h2>
-        <p>Hello visitor! I am Evan from Dhaka,Bangladesh. Currently studying and wandering in the world of Information Technology. I like strategizing, analyzing and developing Technical Stuffs. </p>
-    </div>
-    <div class="section">
-        <h2><span>My Works</span></h2>
-        <p align="center"><strong>Here are some of my works</strong></p>
-        <a href="https://github.com/RaihanEvan">
-            <img src="https://img.icons8.com/nolan/144/github.png"/>
-            <div class="caption"> GitHub Account</div>
-        </a>
-        <br>
-            <p align="centre"><strong>Resources I Use</strong></p>
-            <a href="https://github.com/">
-                <img src="https://img.icons8.com/nolan/144/github.png"/>
-                <div class="caption">Github</div>
-    </div>
-    <div class="section">
-        <h1><span>My Skills</span></h1>
-        <ul>
-            <li>Java<br /> <progress min="0" max="100" value="95"></progress> </li>
-            <li>Python <br /> <progress min="0" max="100" value="75"></progress> </li>
-            <li>Web Development<br /> <progress min="0" max="100" value="60"></progress> </li>
-        </ul>
-    </div>
-    <div class="section" id="contacts">
-        <h1><span>Contact/Reach Me</span></h1>
-        <div>
-            <a href="https://www.instagram.com/_imrvan" target="_blank">
-            <img alt="Instagram" src="https://img.icons8.com/cute-clipart/100/instagram-new.png"/>
-            </a>
-            <a href="https://www.kaggle.com/raihanevan">
-            <img alt="Kaggle" src="https://www.sololearn.com/Uploads/icons/kaggle.png" />
-            </a>
-            <a href="https://github.com/RaihanEvan">
-            <img alt="GitHub" src="https://img.icons8.com/nolan/144/github.png"/>
-            </a>
-            <a href="https://www.youtube.com/@raihanevan">
-            <img alt="YouTube" src="https://img.icons8.com/color/96/000000/youtube-play.png"/>
-            </a>
-            <a href="mailto:raihan.evan@gmail.com">
-            <img alt="Email" src="https://img.icons8.com/fluent/96/000000/gmail.png"/>
-            </a>
-        </div>
-    </div>
-</body>
+  <!-- Header Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <!-- Home Section with Profile Image -->
+  <section id="home">
+    <div class="container">
+      <img class="profile-img" src="https://via.placeholder.com/150" alt="Profile Image">
+      <h1>Assalamualaikum! Welcome to My Portfolio Webpage</h1>
+      <p>A Java Developer, DevOps and Cyberworld Enthusiast.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="content-section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>This section is a brief description of who I am, my background, skills, and passions. Share your story and what makes you unique.</p>
+    </div>
+  </section>
+
+  <!-- CV Download Section -->
+  <section id="cv" class="content-section">
+    <div class="container">
+      <h2>CV Download</h2>
+      <p>Click the button below to download my CV in PDF format.</p>
+      <a href="path/to/cv.pdf" download>Download CV (PDF)</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="content-section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill">
+        <div class="skill-name">HTML-CSS</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">ReactJS</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Java</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-name">Python</div>
+        <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section 
+  <section id="testimonials" class="content-section">
+    <div class="container">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+        <p>"Skibidus is an exceptional professional with a keen eye for detail."</p>
+        <strong>- Client A</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Working with Skibidus was a fantastic experience. Highly recommended!"</p>
+        <strong>- Client B</strong>
+      </div>
+    </div>
+  </section>
+  -->
+
+  <!-- Achievements Gallery Section -->
+  <section id="achievements" class="content-section">
+    <div class="container">
+      <h2>Achievements</h2>
+      <div id="achievements">
+        <img src="https://via.placeholder.com/150" alt="Achievement 1">
+        <img src="https://via.placeholder.com/150" alt="Achievement 2">
+        <img src="https://via.placeholder.com/150" alt="Achievement 3">
+        <img src="https://via.placeholder.com/150" alt="Achievement 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section with Social Media Links -->
+  <section id="contact" class="content-section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch, please fill out the form below:</p>
+      <form action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div class="social" style="margin-top: 1rem;">
+		<a href="https://www.facebook.com/raihan.evan.3/" target="_blank">Facebook</a> |
+        <a href="https://www.linkedin.com/in/raihan-evan-0b7b30188/" target="_blank">LinkedIn</a> |
+        <a href="https://github.com/RaihanEvan" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Skibidus Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- Dark/Light Theme Toggle -->
+  <button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark/Light</button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+    // Optional: If you want to animate the skill bars on scroll, add your JS here.
+  </script>
+</body>
 </html>
