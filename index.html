@@ -1,138 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evan's Portfolio</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan's Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <!-- Header Navigation -->
-  <header>
+    <!-- Navigation -->
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <!-- Home Section with Profile Image -->
-  <section id="home">
-    <div class="container">
-      <img class="profile-img" src="https://via.placeholder.com/150" alt="Profile Image">
-      <h1>Assalamualaikum! Welcome to My Portfolio Webpage</h1>
-      <p>A Java Developer, DevOps and Cyberworld Enthusiast.</p>
+    <!-- Home Section -->
+    <section id="home">
+	<img src="profile.jpg" alt="Your Name" class="profile-pic">
+        <div class="hero-text">
+            <h1>H.M.Raihan Evan</h1>
+            <p>Software Engineer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Committed to constantly improving and learning new things. Currently looking for entry-level opportunities to experience real-world situations in order to develop skills and boost adaptability. Proficient in a diverse set of tools and technologies, including programming languages, web frameworks, database management, and testing methodologies.</p>
+        <button class="cv-btn" id="cvButton">Download CV</button>
+    </section>
+
+        
+ <!-- Projects Section -->
+    <section id="projects">
+        <h2>Featured Work</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Project One</h3>
+                <p>Modern web application with AI integration</p>
+            </div>
+            <div class="project-card">
+                <h3>Project Two</h3>
+                <p>Mobile-first e-commerce platform</p>
+            </div>
+        </div>
+    </section>
+    <!-- New Publications Section 
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="publication-list">
+            <div class="publication-item">
+                <h3>AI in Modern Web Development</h3>
+                <p>Journal of Advanced Computing • 2023</p>
+            </div>
+            <div class="publication-item">
+                <h3>Responsive Design Patterns</h3>
+                <p>Frontend Weekly • 2022</p>
+            </div>
+        </div>
+    </section>
+-->
+    <!-- New GIF Section -->
+    <div class="gif-section">
+        <h3>When the code finally works 🎉</h3>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/3o7abKhOpu0NwenH3O/giphy.gif" alt="Fun GIF" style="max-width: 100%;">
+        </div>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="content-section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>This section is a brief description of who I am, my background, skills, and passions. Share your story and what makes you unique.</p>
-    </div>
-  </section>
 
-  <!-- CV Download Section -->
-  <section id="cv" class="content-section">
-    <div class="container">
-      <h2>CV Download</h2>
-      <p>Click the button below to download my CV in PDF format.</p>
-      <a href="path/to/cv.pdf" download>Download CV (PDF)</a>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Let's Connect</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <p>raihan.evan@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <span>📱</span>
+                <p>+8801914567464</p>
+            </div>
+			<div class="contact-item">
+                <a href="https://github.com/RaihanEvan" target="_blank">🐙 GitHub Profile</a>
+            </div>
+			<div class="contact-item">
+				<a href="https://www.linkedin.com/in/raihan-evan-0b7b30188" target="_blank">💼 LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="content-section">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skill">
-        <div class="skill-name">HTML-CSS</div>
-        <div class="skill-bar"><div class="skill-level" style="width: 90%;"></div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">ReactJS</div>
-        <div class="skill-bar"><div class="skill-level" style="width: 60%;"></div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Java</div>
-        <div class="skill-bar"><div class="skill-level" style="width: 70%;"></div></div>
-      </div>
-      <div class="skill">
-        <div class="skill-name">Python</div>
-        <div class="skill-bar"><div class="skill-level" style="width: 30%;"></div></div>
-      </div>
-    </div>
-  </section>
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-  <!-- Testimonials Section 
-  <section id="testimonials" class="content-section">
-    <div class="container">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-        <p>"Skibidus is an exceptional professional with a keen eye for detail."</p>
-        <strong>- Client A</strong>
-      </div>
-      <div class="testimonial">
-        <p>"Working with Skibidus was a fantastic experience. Highly recommended!"</p>
-        <strong>- Client B</strong>
-      </div>
-    </div>
-  </section>
-  -->
+        // Active section detection
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if(pageYOffset >= sectionTop - 300) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('active');
+                if(a.getAttribute('href').includes(currentSection)) {
+                    a.classList.add('active');
+                }
+            });
+        });
+		        // Updated Download Button with Confetti
+        document.getElementById('cvButton').addEventListener('click', function() {
+            // Trigger confetti
+            var duration = 3000;
+            var end = Date.now() + duration;
 
-  <!-- Achievements Gallery Section -->
-  <section id="achievements" class="content-section">
-    <div class="container">
-      <h2>Achievements</h2>
-      <div id="achievements">
-        <img src="https://via.placeholder.com/150" alt="Achievement 1">
-        <img src="https://via.placeholder.com/150" alt="Achievement 2">
-        <img src="https://via.placeholder.com/150" alt="Achievement 3">
-        <img src="https://via.placeholder.com/150" alt="Achievement 4">
-      </div>
-    </div>
-  </section>
+            (function frame() {
+                confetti({
+                    particleCount: 7,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    colors: ['#ff0000', '#00ff00', '#0000ff']
+                });
+                confetti({
+                    particleCount: 7,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    colors: ['#ff0000', '#00ff00', '#0000ff']
+                });
 
-  <!-- Contact Section with Social Media Links -->
-  <section id="contact" class="content-section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>If you'd like to get in touch, please fill out the form below:</p>
-      <form action="https://formspree.io/f/your_form_id" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <div class="social" style="margin-top: 1rem;">
-		<a href="https://www.facebook.com/raihan.evan.3/" target="_blank">Facebook</a> |
-        <a href="https://www.linkedin.com/in/raihan-evan-0b7b30188/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/RaihanEvan" target="_blank">GitHub</a>
-      </div>
-    </div>
-  </section>
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Skibidus Portfolio. All rights reserved.</p>
-  </footer>
+            // Trigger download
+            setTimeout(function() {
+                window.location.href = 'cv.pdf'; // Ensure cv.pdf is in root folder
+            }, 1000);
+        });
 
-  <!-- Dark/Light Theme Toggle -->
-  <button class="toggle-dark" onclick="toggleDarkMode()">Toggle Dark/Light</button>
-
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-    }
-    // Optional: If you want to animate the skill bars on scroll, add your JS here.
-  </script>
+        // Add smooth scroll to new sections
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if(target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
