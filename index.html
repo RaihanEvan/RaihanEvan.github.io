@@ -307,25 +307,7 @@
                 });
             });
         });
-
-        // Active section detection
-        window.addEventListener('scroll', () => {
-            let currentSection = '';
-            document.querySelectorAll('section').forEach(section => {
-                const sectionTop = section.offsetTop;
-                if(pageYOffset >= sectionTop - 300) {
-                    currentSection = section.getAttribute('id');
-                }
-            });
-            
-            document.querySelectorAll('nav a').forEach(a => {
-                a.classList.remove('active');
-                if(a.getAttribute('href').includes(currentSection)) {
-                    a.classList.add('active');
-                }
-            });
-        });
-		        // Updated Download Button with Confetti
+// Updated Download Button with Confetti
         document.getElementById('cvButton').addEventListener('click', function() {
             // Trigger confetti
             var duration = 3000;
@@ -357,6 +339,24 @@
                 window.location.href = 'cv.pdf';
             }, 1000);
         });
+        // Active section detection
+        window.addEventListener('scroll', () => {
+            let currentSection = '';
+            document.querySelectorAll('section').forEach(section => {
+                const sectionTop = section.offsetTop;
+                if(pageYOffset >= sectionTop - 300) {
+                    currentSection = section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('nav a').forEach(a => {
+                a.classList.remove('active');
+                if(a.getAttribute('href').includes(currentSection)) {
+                    a.classList.add('active');
+                }
+            });
+        });
+		        
 
         // Add smooth scroll to new sections
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
