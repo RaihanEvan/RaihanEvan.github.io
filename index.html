@@ -330,12 +330,12 @@
         // Create an anchor tag dynamically for download
         setTimeout(() => {
             let link = document.createElement('a');
-            link.href = 'cv.pdf';  // Ensure 'cv.pdf' is correctly placed in your root directory
-            link.download = 'HMRaihanEvan_CV.pdf';  // Custom filename for download
+            link.href = 'cv.pdf';
+            link.download = 'cv.pdf';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-        }, 1500);  // Slight delay for a better effect
+        }, 1500); 
     });
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
